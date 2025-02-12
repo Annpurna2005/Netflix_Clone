@@ -36,7 +36,8 @@ const Questions = () => {
     <div className="faq-container">
       <h2>Frequently Asked Questions</h2>
       {faqData.map((item, index) => (
-        <div key={index} className="faq-item">
+       <div key={index} className={`faq-item ${openIndex === index ? 'open' : ''}`}>
+
           <div className="faq-question" onClick={() => toggleAnswer(index)}>
             <h3>{item.question}</h3>
             <span>{openIndex === index ? '−' : '+'}</span>

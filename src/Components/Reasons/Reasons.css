@@ -1,42 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
 .reasons-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* ✅ Center में रखेगा */
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
+
+/* Individual Boxes */
+.reason-box {
+  background: linear-gradient(135deg, #800080, #ff1493);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 280px; /* ✅ Default Width */
+  height: 320px; /* ✅ Equal Size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.reason-box:hover {
+  transform: scale(1.05);
+}
+
+/* Headings */
+.reason-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.reason-box h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Image Styling */
+.reason-box img {
+  max-width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* 🔹 Mobile Screens (Max 600px) */
+@media (max-width: 600px) {
+  .reasons-container {
+    flex-direction: column; /* ✅ Boxes Column में आएंगे */
+    align-items: center; 
   }
-  
+
   .reason-box {
-    background: linear-gradient(135deg, #800080, #ff1493);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
+    width: 90%; /* ✅ Full Width लेगा */
+    height: auto; /* ✅ Content के हिसाब से Height */
+    padding: 15px;
   }
-  
-  .reason-box:hover {
-    transform: scale(1.05);
-  }
-  
+
   .reason-box h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
   }
-  
+
   .reason-box h6 {
-    font-size: 1rem;
-    font-weight: normal;
+    font-size: 0.9rem;
   }
-  
+
   .reason-box img {
-    max-width: 100%;
-    margin-top: 10px;
-    border-radius: 5px;
+    max-width: 70px;
+    height: 70px;
   }
-  img{
-    width: 50px;
+}
+
+/* 🔹 Tablet Screens (Max 1024px) */
+@media (max-width: 1024px) {
+  .reasons-container {
+    gap: 15px; /* ✅ थोड़ा कम Gap */
   }
+
+  .reason-box {
+    width: 45%; /* ✅ 2 Boxes एक Row में */
+  }
+}

@@ -1,35 +1,85 @@
-*{
+* {
     padding: 0;
     margin: 0;
-   overflow-x: hidden;
+    box-sizing: border-box;
 }
 
+/* Main Trending Section */
 .trending-container {
     position: relative;
     margin-top: 100px; 
     padding: 20px;
-    overflow-x: auto;
-    white-space: nowrap;
     background-color: black;
     width: 100%;
-
+    overflow-x: auto;  /* ✅ Enable Horizontal Scroll */
+    white-space: nowrap;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ff0000 black; /* Red Scrollbar */
 }
 
+/* Scrollbar for Chrome, Edge, Safari */
+.trending-container::-webkit-scrollbar {
+    height: 8px; /* Scrollbar Height */
+}
 
+.trending-container::-webkit-scrollbar-track {
+    background: black; /* Track Color */
+}
+
+.trending-container::-webkit-scrollbar-thumb {
+    background: red; /* Scrollbar Color */
+    border-radius: 4px;
+}
+
+/* Image Slider */
 .image-slider {
     display: flex;
     gap: 20px;
+    width: max-content; /* ✅ Ensures all images fit horizontally */
 }
 
+/* Trending Images */
 .trending-image {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
-    width: 200px;
+    width: 150px; /* Default Size */
+    height: auto;
 }
 
 .trending-image:hover {
     transform: scale(1.1);
 }
-.main-content {
-    padding-bottom: 100px; 
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* 🔹 Mobile Screens */
+@media (max-width: 768px) {
+    .trending-container {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    .image-slider {
+        gap: 10px;
+    }
+
+    .trending-image {
+        width: 100px; /* Smaller Images for Mobile */
+    }
+}
+
+/* 🔹 Tablet Screens */
+@media (max-width: 1024px) {
+    .trending-container {
+        margin-top: 90px;
+        padding: 18px;
+    }
+
+    .image-slider {
+        gap: 15px;
+    }
+
+    .trending-image {
+        width: 130px; /* Adjusted for Tablet */
+    }
 }

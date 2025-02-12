@@ -1,41 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FAQ Container */
 .faq-container {
-    max-width: 1300px;
-    margin: auto;
-    padding: 20px;
-    background-color: black;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+}
+
+section {
+  background-color: black;
+}
+
+/* FAQ Item */
+.faq-item {
+  background: rgb(56, 55, 55);
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Open FAQ - Adjust Height Dynamically */
+.faq-item.open {
+  height: auto;
+  padding-bottom: 15px;
+}
+
+/* Hover Effect */
+.faq-item:hover {
+  transform: scale(1.02);
+}
+
+/* Question Styling */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Answer Styling */
+.faq-answer {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* 🔹 Mobile Screens (Max 600px) */
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 10px; /* ✅ Less Padding */
   }
-  section{
-    background-color: black;
-  }
-  
+
   .faq-item {
-    background: rgb(56, 55, 55);
-    color: white;
-    margin-bottom: 10px;
-    padding: 15px;
-height: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    padding: 12px;
+    height: auto; /* ✅ Auto Adjust */
   }
-  
-  .faq-item:hover {
-    transform: scale(1.02);
-  }
-  
-  .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+
   .faq-question span {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px; /* ✅ Smaller Font */
   }
-  
+
   .faq-answer {
-    margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px; /* ✅ Smaller Text */
   }
-  
+}
+
+/* 🔹 Tablet Screens (Max 1024px) */
+@media (max-width: 1024px) {
+  .faq-container {
+    max-width: 90%; /* ✅ More Flexible */
+  }
+
+  .faq-item {
+    padding: 15px;
+  }
+}

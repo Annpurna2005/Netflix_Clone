@@ -18,7 +18,6 @@ const LandingPage = () => {
           <button className="sign-in-button">Sign in</button>
         </div>
       </div>
-
       <div className="main-content">
         <div className="text-container"> 
           <h1 className="main-title">Unlimited movies,</h1>
