@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Netflix Style Landing Page CSS */
+
+/* Overall page styling */
+body {
+    font-family: Arial, sans-serif;
+  
+    color: #fff;
+    background-image: url(../../assets/Background.jpg);
+    
+}
+
+/* Top section containing logo and buttons */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  
+}
+
+/* Logo styling */
+.logo {
+    margin-top: -10px;
+    width: 100px;
+    height: auto;
+}
+
+/* Header options (Language select and Sign-in button) */
+.header-options {
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 100px;
+}
+
+/* Language select input */
+.language-select {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Sign-in button */
+.sign-in-button {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.sign-in-button:hover {
+    background-color: #b20710;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Headings styling */
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Email input and Get Started button */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.email-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 30px;
+}
+.get-started-button{
+    background-color: red;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+    .sub-title {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .email-input {
+        width: 100%;
+    }
+    .header {
+        padding: 10px 20px;
+    }
+    .header-options {
+        right: 20px;
+    }
+}

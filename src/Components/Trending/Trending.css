@@ -1,0 +1,25 @@
+.trending-container {
+    position: relative;
+    margin-top: 100px; /* Landing Page से थोड़ा नीचे लाने के लिए */
+    padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.image-slider {
+    display: flex;
+    gap: 10px;
+}
+
+.trending-image {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trending-image:hover {
+    transform: scale(1.1);
+}
+.main-content {
+    padding-bottom: 100px; /* Trending section से overlap रोकने के लिए */
+}
