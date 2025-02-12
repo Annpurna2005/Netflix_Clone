@@ -14,8 +14,8 @@ const Trending = () => {
       { id: 6, url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1wfVgivgSKY4icB6wBm14tDrflO58v8Rag&s' },
       { id: 7, url: 'https://motivatevalmorgan.com/wp-content/uploads/2018/02/Love-Aaj-Kal-Hindi-Movie-Poster.jpg' },
       { id: 8, url: 'https://m.media-amazon.com/images/I/91uSkUMWc+L._AC_UF350,350_QL50_.jpg' },
-       { id: 9, url: 'https://i.redd.it/i-really-like-hindi-movie-posters-that-are-written-in-v0-d66qjjo0407e1.jpg?width=350&format=pjpg&auto=webp&s=3d3772850381d7c463cfb8aadde4d8130f4ac5d7' },
-       { id: 10, url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9gHxWXNMUr3lMJr4W8rWpVh6vwyjriJ6bQ&s' }
+       { id: 9, url: 'https://i.redd.it/i-really-like-hindi-movie-posters-that-are-written-in-v0-d66qjjo0407e1.jpg?width=350&format=pjpg&auto=webp&s=3d3772850381d7c463cfb8aadde4d8130f4ac5d7' }
+      // { id: 10, url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9gHxWXNMUr3lMJr4W8rWpVh6vwyjriJ6bQ&s' }
     ];
     setImages(imageData);
   }, []);

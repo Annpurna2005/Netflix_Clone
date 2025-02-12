@@ -17,19 +17,6 @@
     scrollbar-color: #ff0000 black; /* Red Scrollbar */
 }
 
-/* Scrollbar for Chrome, Edge, Safari */
-.trending-container::-webkit-scrollbar {
-    height: 8px; /* Scrollbar Height */
-}
-
-.trending-container::-webkit-scrollbar-track {
-    background: black; /* Track Color */
-}
-
-.trending-container::-webkit-scrollbar-thumb {
-    background: red; /* Scrollbar Color */
-    border-radius: 4px;
-}
 
 /* Image Slider */
 .image-slider {
