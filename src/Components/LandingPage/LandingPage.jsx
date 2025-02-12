@@ -15,7 +15,6 @@ const LandingPage = () => {
   <option value="en">English</option>
   <option value="hi">हिन्दी</option>
 </select>
-
           <button className="sign-in-button">Sign in</button>
         </div>
       </div>

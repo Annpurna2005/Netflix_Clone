@@ -1,25 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+   overflow-x: hidden;
+}
+
 .trending-container {
     position: relative;
-    margin-top: 100px; /* Landing Page से थोड़ा नीचे लाने के लिए */
+    margin-top: 100px; 
     padding: 20px;
     overflow-x: auto;
     white-space: nowrap;
+    background-color: black;
+    width: 100%;
+
 }
 
 
 .image-slider {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .trending-image {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    width: 200px;
 }
 
 .trending-image:hover {
     transform: scale(1.1);
 }
 .main-content {
-    padding-bottom: 100px; /* Trending section से overlap रोकने के लिए */
+    padding-bottom: 100px; 
 }

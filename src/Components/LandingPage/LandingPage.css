@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 10;
-  
+  position:relative;
 }
 
 /* Logo styling */
@@ -35,13 +35,14 @@ body {
 }
 
 /* Header options (Language select and Sign-in button) */
+/* Header options (Language select and Sign-in button) */
 .header-options {
     margin-top: -70px;
     display: flex;
-    align-items: center;
     gap: 10px;
-    position: absolute;
+    position: relative;
     right: 100px;
+    margin-left: 150vh;
 }
 
 /* Language select input */
@@ -133,9 +134,9 @@ body {
         width: 100%;
     }
     .header {
-        padding: 10px 20px;
+        margin-top: 5%;
     }
     .header-options {
-        right: 20px;
+        margin-top: 5%;
     }
 }
